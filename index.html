@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows NT 4</title>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./code.js"></script>
+</head>
+<body>
+    <audio id="intro" src="./assets/audio/WinNT4StartUp.mp3" autoplay="false"></audio>
+    <main>
+        <sidebar>
+            <div class="desktop-icon">
+                <img src="./assets/icons/devices/32/computer.png" alt="My Computer">
+                <p>My Computer</p>
+            </div>
+            <div class="desktop-icon">
+                <img src="./assets/icons/places/32/network-workgroup.png" alt="Network Neighborhood">
+                <p>Network Neighborhood</p>
+            </div>
+            <div class="desktop-icon">
+                <img src="./assets/icons/places/32/user-trash.png" alt="Recycle Bin">
+                <p>Recycle Bin</p>
+            </div>
+            <div class="desktop-icon">
+                <img src="./assets/icons/categories/48/applications-internet.png" alt="Recycle Bin">
+                <p>Internet Explorer</p>
+            </div>
+        </sidebar>
+
+        <div class="window" id="window">
+            <div class="title inactive-window" id="window-title">
+                <div class="window-name">
+                    <img src="./assets/icons/devices/32/computer.png" alt="My Computer">    
+                    <p>My Computer</p>
+                </div>
+                <div class="control-box">
+                    <div class="minimize">
+                        <div class="control" id="winMin"></div>
+                    </div>
+                    <div class="maximize">
+                        <div class="control" id="winMax"></div>
+                    </div>
+                    <div class="close">
+                        <div class="control" id="winClose">X</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="#"><span class="mnemonic">F</span>ile</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#"><span class="mnemonic">E</span>dit</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#"><span class="mnemonic">V</span>iew</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#"><span class="mnemonic">H</span>elp</a>
+                </div>
+            </div>
+
+            <div class="window-area">
+                <div class="window-content" id="editor">
+                    <div class="desktop-icon">
+                        <img src="./assets/icons/devices/32/drive-removable-media.png" alt="(A:)">
+                        <p>(A:)</p>
+                    </div>
+                    <div class="desktop-icon">
+                        <img src="./assets/icons/devices/32/drive-harddisk.png" alt="(C:)">
+                        <p>(C:)</p>
+                    </div>
+                    <div class="desktop-icon">
+                        <img src="./assets/icons/devices/32/application-x-cd-image.png" alt="(D:)">
+                        <p>(D:)</p>
+                    </div>
+                    <div class="desktop-icon">
+                        <img src="./assets/icons/categories/32/preferences-desktop.png" alt="Control Panel">
+                        <p>Control Panel</p>
+                    </div>
+                    <div class="desktop-icon">
+                        <img src="./assets/icons/places/48/folder-printer.png" alt="Printers">
+                        <p>Printers</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="window-footer">
+                <div class="footer-inner" id="window-footer">
+                    5 Objects
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="start-menu"></div>
+    <footer id="task-bar">
+        <div class="task-bar-buttons">
+            <div id="start-button">Start</div> 
+            <div id="my-computer-taskbar" class="taskbar-app">
+                <img src="./assets/icons/devices/32/computer.png" alt="Recycle Bin">
+                My Computer
+            </div> 
+        </div>
+        
+        <div id="clock">10:02 AM</div> 
+    </footer>
+
+</body>
+</html>
